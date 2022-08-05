@@ -1,0 +1,266 @@
+body{ 
+
+    background-image: url(assets/bg.png);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.navbar
+{
+    height:100px;
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+.navbar>div:nth-child(1)
+{
+    width:30%;
+    height: 100px;
+   
+}
+.navbar>div:nth-child(1)>img
+{
+    width: 83px;
+    height: 30px;
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+
+.navbar>div:nth-child(2)
+{
+    height: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.navbar>div:nth-child(2)>div:nth-child(1)
+{
+    height: 98px;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.navbar>div:nth-child(2)>div:nth-child(2)
+{
+    height: 2px;
+    width: 85%;
+    background-color: white;
+}
+
+.navbar>div:nth-child(2)>div:nth-child(1)>ul
+{
+list-style-type: none;
+width: 80%;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+flex-wrap: wrap;
+}
+
+.navbar>div:nth-child(2) ul>li
+{
+
+    line-height: 98px;
+    width:20%;
+    text-align: left;
+    color: white;
+    font-size: 13px;
+
+}
+
+.phone
+{
+  width:20%;
+  height: 100px;
+
+  
+}
+.phone>img
+{
+    height: 25px;
+    width: 25px;
+    float: left;
+    color: white;
+    margin-top:35px;
+    margin-right: 5px;
+
+}
+.phone p{
+    margin-top: 38px;
+    font-size: 13px;
+    color: white;
+ 
+}
+.phone p:nth-child(2){
+    margin-top: 5px;
+    margin-left: 30px;
+    
+} 
+
+/* nav::after
+{
+    content: "";
+    width:60%;
+    height:2px;
+    background-color: white;
+    left: 40%;
+    position: absolute;
+    top:102px;
+} */
+
+
+
+
+
+
+.hero{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+.left-section
+{
+
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero h1
+{
+font-size: 50px;
+font-family: 'Poppins';
+margin-top: 75px;
+margin-left: 50px;
+color: white;
+width: fit-content;
+
+}
+
+.hero button
+{
+    padding: 0px 18px;
+    height: 48px;
+    width: fit-content;
+    background-color:transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    font-family: Poppins;
+    margin-top: 35px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.right-section
+{
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* justify-content: space-between; */
+  
+
+}
+
+.box1
+{
+    width: 220px;
+    height:130px;
+    flex:1;
+    display: flex;
+    right: 100px;
+    flex-direction: column;
+    margin-top: 40px;
+    position: absolute;
+    background-color: rgba(49,72,89,0.8);
+}
+.box2
+{
+    flex:1;
+    width: 220px;
+    height:130px;
+    left:0px;
+   
+    display: flex;
+    flex-direction: column;
+    top: 40vh;
+    position: absolute;
+    background-color: rgba(49,72,89,0.8);
+    
+}
+.box1::after, .box2::after{
+    content: "";
+    position:absolute;
+    height: 50px;
+    width:2px;
+    background-color: white;
+    top:130px;
+    right: 50px;
+    }
+
+
+    .box1::before, .box2::before{
+        content: "";
+        position:absolute;
+        height: 12px;
+        width:12px;
+        background-color: white;
+        border-radius: 20px;
+        top:180px;
+        right: 44px;
+        }
+
+
+
+
+.box1>div, .box2>div{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60px;
+    height:35px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.box1>div>img, .box2>div>img{
+    height:25px;
+    width:30px;
+
+}
+
+.box1>h3, .box2>h3{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: white;
+
+}
