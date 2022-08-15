@@ -1,19 +1,123 @@
-body{ 
 
-    background-image: url(assets/bg.png);
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
+
+@media (max-width:699px)
+{
+    body{
+        
+        background-color: #042338;
+    }
+    .navbar>div:nth-child(2)>div:nth-child(2)
+    {
+        height: 2px;
+        width: 100%;
+    }
+    .left-section
+    {
+        width:100%;
+    }
+    .right-section
+    {
+        width:100%;
+    }
+    .hero h1
+    {
+        margin-left: 20px;
+    }
+
+    .hero button
+    {
+        margin-left: 20px;
+    }
+    .navbar>div:nth-child(1)>img
+    {
+        margin-left: 20px;
+    }
+    .navbar>div:nth-child(1)
+    {
+        width:100%;
+        height: 75px;
+    }
+    .navbar>div:nth-child(2)
+    {
+        width:100%;
+        height: 75px;
+        margin-left: 20px;
+    
+    }
+    .phone
+    {
+        display: none;
+    }
+    .navbar>div:nth-child(2)>div:nth-child(1)
+    {
+        height: 73px;
+        width: 100%;
+    }
+    .navbar>div:nth-child(2)>div:nth-child(1)>ul
+    {
+        width: 100%;
+    }
 }
+@media (min-width:700px)
+{
+    body{ 
+
+        background-image: url(assets/bg.png);
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+    }
+    .navbar>div:nth-child(2)>div:nth-child(1)>ul
+    {
+        width: 80%;
+    }
+    .navbar>div:nth-child(2)>div:nth-child(1)
+    {
+        height: 98px;
+        width: 85%;
+    }
+    .navbar>div:nth-child(1)>img
+    {
+        margin-left: 50px;
+    }
+    .navbar>div:nth-child(1)
+    {
+        width:30%;
+        height: 100px;
+    }
+    .navbar>div:nth-child(2)
+    {
+        width:70%;
+        margin-left: 0px;
+        height: 100px;
+    }
+    .left-section
+    {
+        width:50%;
+    }
+    .right-section
+    {
+        width:50%;
+    }
+    .hero h1
+    {
+        margin-left: 50px;
+    }
+
+    .hero button
+    {
+        margin-left: 50px;
+    }
+}
+
 
 /* POPPINS FONT FAMILY */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   padding: 0;
   margin: 0;
-  
 }
 
 .navbar
@@ -28,8 +132,8 @@ body{
 
 .navbar>div:nth-child(1)
 {
-    width:30%;
-    height: 100px;
+    /* width:30%; */
+    /* height: 100px; */
    
 }
 .navbar>div:nth-child(1)>img
@@ -37,14 +141,14 @@ body{
     width: 83px;
     height: 30px;
     margin-top: 35px;
-    margin-left: 50px;
+
 }
 
 
 .navbar>div:nth-child(2)
 {
-    height: 100px;
-    width: 70%;
+    /* height: 100px; */
+    /* width: 70%; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -52,8 +156,8 @@ body{
 
 .navbar>div:nth-child(2)>div:nth-child(1)
 {
-    height: 98px;
-    width: 85%;
+    /* height: 98px;
+    width: 85%; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -69,7 +173,7 @@ body{
 .navbar>div:nth-child(2)>div:nth-child(1)>ul
 {
 list-style-type: none;
-width: 80%;
+/* width: 80%; */
 display: flex;
 flex-direction: row;
 justify-content: flex-start;
@@ -116,35 +220,19 @@ flex-wrap: wrap;
     
 } 
 
-/* nav::after
-{
-    content: "";
-    width:60%;
-    height:2px;
-    background-color: white;
-    left: 40%;
-    position: absolute;
-    top:102px;
-} */
-
-
-
-
-
-
 .hero{
     display: flex;
-
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 
 .left-section
 {
-
-    flex: 1;
+    /* width:50%; */
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -154,7 +242,7 @@ flex-wrap: wrap;
 font-size: 50px;
 font-family: 'Poppins';
 margin-top: 75px;
-margin-left: 50px;
+
 color: white;
 width: fit-content;
 
@@ -173,17 +261,17 @@ width: fit-content;
     margin-top: 35px;
     font-size: 17px;
     font-weight: 600;
-    margin-left: 50px;
+  
 }
 
 .right-section
 {
     position: relative;
     display: flex;
-    flex: 1;
+    flex-wrap: wrap;
+    /* width:50%; */
     flex-direction: column;
     /* justify-content: space-between; */
-  
 
 }
 
@@ -193,7 +281,7 @@ width: fit-content;
     height:130px;
     flex:1;
     display: flex;
-    right: 100px;
+    right: 50px;
     flex-direction: column;
     margin-top: 40px;
     position: absolute;
@@ -204,8 +292,8 @@ width: fit-content;
     flex:1;
     width: 220px;
     height:130px;
-    left:0px;
-   
+    left:20px;
+
     display: flex;
     flex-direction: column;
     top: 40vh;
@@ -260,7 +348,8 @@ width: fit-content;
 .box1>h3, .box2>h3{
     margin-left: 20px;
     margin-top: 10px;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 350;
+    font-family: 'Poppins';
     color: white;
-
 }
