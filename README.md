@@ -12,9 +12,11 @@
   - Float after & before
   - Absolute Positioning
   - Divider poitioning and width
+  - Media Queries
+  - Changed element positions and alignents for responsive web
  
   
-### Development Efforts:- 3.50 hours
+### Development Efforts:- 3.50 hours + 1.5 hours(responsive web)
   
 ### Technologies:-
 <span>
